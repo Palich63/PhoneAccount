@@ -8,7 +8,7 @@ public class Main {
         System.out.print("На какую сумму вы хотите пополнить счёт?: ");
         float deposit = in.nextFloat();
         if (deposit > 100) {
-            account = account + deposit + (deposit / 100);
+            account = account + deposit + ((int) deposit / 100);
         } else {
             account = account + deposit;
         }
